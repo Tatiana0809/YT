@@ -1,0 +1,13 @@
+.header__btn {
+    width: 230px;
+    min-height: 48px;
+    border-radius: 4px;
+    background: #E3F5F5;
+    border: none;
+    color: #03B2A5;
+    padding: 14px 20px;
+    font-size: 16px;
+    font-style: 700;
+    font-weight: 700;
+    cursor: pointer;
+}

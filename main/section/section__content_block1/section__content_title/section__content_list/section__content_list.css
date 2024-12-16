@@ -1,0 +1,33 @@
+.section__content_list {
+    width: 584px;
+    min-height: 274px;
+    list-style: none;
+    padding-left: 0;
+    counter-reset: list-counter;
+    text-decoration-line: underline;
+    line-height: 24px;
+
+}
+
+.section__content_list > ul {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 10px; 
+}
+.section__content_list > li::before {
+    content: ".";
+    left: 0;
+    top: 0;
+    color: #03B2A5;
+    font-size: 20px;
+    line-height: 1;
+}
+.section__content_list ul {
+    list-style: none;
+    padding-left: 20px;
+}
+.section__content_list ul li {
+    padding-left: 0;
+    margin-bottom: 5px;
+
+}

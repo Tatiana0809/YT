@@ -1,0 +1,9 @@
+.main {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 924px 516px;
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas: 'section sidebar';
+    margin-left: 120px;
+    margin-right: 120px;
+}
