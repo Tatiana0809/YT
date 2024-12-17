@@ -26,11 +26,6 @@ body {
 }
 
 
-.header__nav {
-    
-}
-
-
 
 .header__list {
     display: flex;
@@ -68,7 +63,7 @@ body {
     color: #03B2A5;
     padding: 14px 20px;
     font-size: 16px;
-    font-style: 700;
+    font-style: inherit;
     font-weight: 700;
     cursor: pointer;
 }
@@ -177,6 +172,12 @@ body {
     font-size: 24px;
     font-weight: 700;
     margin-top: 15px;
+}
+.section__content_h3 {
+    width: 234px;
+    height: 64px;
+    margin: 11.5px 24px 11.5px;
+    font-size: 18px;
 }
 .section__content_block2_paragraph {
     width: 690px;
@@ -408,12 +409,14 @@ figure {
 }
 
 .sidebar {
+    display: flex;
+    flex-direction: column;
     margin-right: 120px;
     margin-top: 88px;
     width: 282px;
     
 }
-.sidebar__info {
+.sidebar__info { 
     width: 282px;
     height: 512px;
     background-color: #E6F0FD;
@@ -470,61 +473,96 @@ figure {
 
 
 
-.section__content_h3 {
-    width: 234px;
-    height: 64px;
-    margin: 11.5px 24px 11.5px;
-    font-size: 18px;
-}
+
 .sidebar__info_card2 {
+    margin: 0;
+    margin-top: 23px;
     position: relative;
     height: 481px;
-    background-color: beige;
-    margin-top: 68px;
+    background-color: #ffffff;
     border-radius: 16px;
-
+    border: 1px solid lightgrey;
 }
 
-.person {
+
+
+.sidebar__info_card2_avatar > img {
     position: absolute;
     border-radius: 50%;
     top: 24px;
     left: 81px;
-
 }
-.name {
+.icons {
+    display: flex;
+    flex-direction: column;
+    width: 105px;
+    height: 56px;
+}
+.pen {
     position: absolute;
     top: 16px;
     left: 16px;
 }
-.video {
+.icons-write {
+    font-size: 12px;
+    line-height: 18px;
+    position: absolute;
+    top: 5px;
+    left: 36px;
+}
+.camera {
     position: absolute;
     top: 48px;
     left: 16px;
 }
-.sidebar__info_card2_psicholog {
+.icons-camera {
+    font-size: 12px;
+    line-height: 18px;
+    position: absolute;
+    top: 37px;
+    left: 36px;
+}
+.sidebar__info_card2-content {
     position: absolute;
     width: 250px;
-    height: 76px;
+    height: 285px;
     top: 160px;
     left: 16px;
 }
-.sidebar__info_card2_psicholog > h3 {
-    font-size: 20px;
-    font-weight: 600;
-}
-.sidebar__info_card2_psicholog_practice {
-    color: #A2A7B1;
-    font-size: 14px;
-}
 
+.personal-data {
+    width: 250px;
+    height: 76px;
+}
+.psycholog-work {
+    
+}
+.psycholog-work_title {
+    font-size: 16px;
+    line-height: 24px;
+}
+.psycholog-work_list {
+    font-size: 14px;
+    line-height: 20px;
+}
+.sidebar__info_card2_btn {
+    width: 250px;
+    height: 48px;
+    border-radius: 4px;
+    background: #35B3A9;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    cursor:pointer;
+}
 .sidebar__info_card3 {
     width: 282px;
     height: 292px;
     position: relative;
     background-color: #2963A3;
     border-radius: 16px;
-    margin-top: 520px;
+    margin-top: 24px;
 }
 .sidebar__info_card3_p {
     position: absolute;
@@ -647,6 +685,7 @@ figure {
     border-radius: 4px;
     font-size: 16px;
     font-weight: 700;
+    cursor: pointer;
 }
 .article__picture {
     width: 520px;
